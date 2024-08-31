@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c2c2d;
+  color: #fefefe;
+  font-size: 1rem; /* Define o tamanho base da fonte */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > header,
+#root > footer {
+  flex: 0 1 auto;
+  padding: 0 1.5rem; /* Ajustado para centralizar mais */
+}
+
+#root > footer {
+  padding: 0.75rem 1.5rem; /* Ajustado para centralizar mais */
+}
+
+#root > div {
+  flex: 1 0 auto;
+  padding: 0 1.5rem; /* Ajustado para centralizar mais */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.5rem; /* Ajustado para tamanho menor */
+}
+
+nav a,
+.logo {
+  display: inline-block;
+  color: #fefefe;
+  padding: 0.75rem; /* Ajustado para tamanho menor */
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #fefefe11;
+}
+
+.logo {
+  font-size: 1rem; /* Ajustado para tamanho menor */
+  font-weight: 600;
+  padding: 0.75rem 0;
+}
+
+.tabs {
+  border-bottom: 1px solid #fefefe;
+  margin: 0.75rem 0; /* Ajustado para tamanho menor */
+}
+
+.tab {
+  color: #fefefe;
+  display: inline-block;
+  padding: 0.75rem; /* Ajustado para tamanho menor */
+  text-decoration: none;
+}
+
+.tab.active {
+  border-bottom: 0.125rem solid #fefefe;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1.5rem; /* Ajustado para tamanho menor */
+  width: 100%;
+}
+
+thead {
+  background-color: #1c1a1d;
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.25); /* Ajustado para menos sombra */
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: rgba(28, 26, 29, 0.33);
+  cursor: default;
+}
+
+th, td {
+  padding: 0.75rem; /* Ajustado para tamanho menor */
+}
+
+.button {
+  background-color: #fefefe;
+  border-radius: 0.125rem; /* Ajustado para bordas menores */
+  border: 0;
+  color: #2c2c2d;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem; /* Ajustado para tamanho menor */
+  padding: 0.375rem 0.75rem; /* Ajustado para tamanho menor */
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.button + .button {
+  margin-left: 0.75rem;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button.is-small {
+  font-size: 0.75rem; /* Ajustado para tamanho menor */
+}
+
+.button.is-large {
+  font-size: 1rem; /* Ajustado para tamanho menor */
+}
+
+.button.is-danger {
+  background-color: #ff5258;
+}
+
+.button.is-primary {
+  background-color: #5ba7fd;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 35rem; /* Ajustado para menor largura */
+  padding: 1.5rem 0; /* Ajustado para menor padding */
+}
+
+input, textarea, select {
+  background-color: #1c1a1d;
+  border-radius: 0.125rem; /* Ajustado para bordas menores */
+  border: 0;
+  color: #fefefe;
+  display: block;
+  margin-top: 0.375rem; /* Ajustado para tamanho menor */
+  margin-bottom: 0.75rem; /* Ajustado para tamanho menor */
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Ajustado para tamanho menor */
+}
+
+.row div {
+  flex: 1 0 10rem; /* Ajustado para menor tamanho */
+}
+
+.item h2 {
+  display: inline-block;
+  margin-right: 1.5rem; /* Ajustado para tamanho menor */
+}
+
+.item span,
+.dashboard-card {
+  background-color: #1c1a1d;
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.25); /* Ajustado para menos sombra */
+  border-radius: 0.125rem; /* Ajustado para bordas menores */
+  cursor: default;
+  font-size: 1rem; /* Ajustado para tamanho menor */
+  margin-top: 1.5rem; /* Ajustado para tamanho menor */
+  padding: 0.75rem 1.5rem; /* Ajustado para tamanho menor */
+}
+
+.item p {
+  font-size: 1rem; /* Ajustado para tamanho menor */
+  margin-top: 1.5rem; /* Ajustado para tamanho menor */
+}
+
+.dashboard-card span {
+  display: block;
+  font-size: 2.25rem; /* Ajustado para tamanho menor */
+  margin: 0.75rem 0; /* Ajustado para tamanho menor */
+  text-align: center;
+}
